@@ -1,0 +1,12 @@
+version: "3"
+services:
+  www:
+    build: .
+    user: 1000:1000
+    ports:
+      - 80:80
+      - 3000:3000
+    volumes:
+      - ./:/var/www/html/
+volumes:
+  persistent:
