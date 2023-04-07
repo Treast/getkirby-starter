@@ -24,7 +24,8 @@
   "require": {
     "php": ">=8.0.0 <8.3.0",
     "getkirby/cms": "^3.9",
-    "leitsch/kirby-blade": "^2.3"
+    "leitsch/kirby-blade": "^2.3",
+    "fabianmichael/kirby-meta": "~0.4.0-beta"
   },
   "config": {
     "allow-plugins": {

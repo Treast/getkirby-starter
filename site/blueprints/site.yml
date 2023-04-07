@@ -1,5 +1,10 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+  content:
+    icon: text
+    label: Content
+    sections:
+      pages:
+        type: pages
+  meta: tabs/meta/site
