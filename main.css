@@ -177,8 +177,8 @@ header nav ul.nav li.nav-item--active a {
 
 @font-face {
   font-family: "OpenSans";
-  src: url(/assets/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46);
-  src: url(/assets/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46?#iefix) format("embedded-opentype"), url(/assets/fonts/OpenSans-Regular.woff2?4361a1a4c7bcc152b0dd789c61b95958) format("woff2"), url(/assets/fonts/OpenSans-Regular.woff?b92cb4a9aaeffb93908d1f0311203114) format("woff"), url(/assets/fonts/OpenSans-Regular.ttf?193203d82e5dd325f0b83c583982d90b) format("truetype"), url(/assets/fonts/OpenSans-Regular.svg?b5ba3723d28577cffb754a051d0357d9) format("svg");
+  src: url(/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46);
+  src: url(/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46?#iefix) format("embedded-opentype"), url(/fonts/OpenSans-Regular.woff2?4361a1a4c7bcc152b0dd789c61b95958) format("woff2"), url(/fonts/OpenSans-Regular.woff?b92cb4a9aaeffb93908d1f0311203114) format("woff"), url(/fonts/OpenSans-Regular.ttf?193203d82e5dd325f0b83c583982d90b) format("truetype"), url(/fonts/OpenSans-Regular.svg?b5ba3723d28577cffb754a051d0357d9) format("svg");
   font-weight: 400;
   font-style: "normal";
   font-display: swap;

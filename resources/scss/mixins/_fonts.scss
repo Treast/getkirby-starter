@@ -1,18 +1,18 @@
+$font-path: "../../fonts";
+
 // @include fonts($fontTitle, 'BrownPro-Bold', 700);
-@mixin fonts($name, $file, $fontWeight) {
+@mixin fonts($name, $directory, $file, $weight, $style: "normal") {
   @font-face {
     font-family: $name;
-    src: url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.eot");
-    src: url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.eot?#iefix")
+    src: url("#{$font-path}/#{$directory}/#{$file}.eot");
+    src: url("#{$font-path}/#{$directory}/#{$file}.eot?#iefix")
         format("embedded-opentype"),
-      url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.woff2")
-        format("woff2"),
-      url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.woff")
-        format("woff"),
-      url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.ttf")
-        format("truetype");
-    font-weight: $fontWeight;
-    font-style: normal;
+      url("#{$font-path}/#{$directory}/#{$file}.woff2") format("woff2"),
+      url("#{$font-path}/#{$directory}/#{$file}.woff") format("woff"),
+      url("#{$font-path}/#{$directory}/#{$file}.ttf") format("truetype"),
+      url("#{$font-path}/#{$directory}/#{$file}.svg") format("svg");
+    font-weight: $weight;
+    font-style: $style;
     font-display: swap;
   }
 }

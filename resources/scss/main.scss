@@ -8,6 +8,9 @@
 
 @import "./components/navigation";
 
+@include fonts("OpenSans", "OpenSans", "OpenSans-Regular", 400);
+
 html,
 body {
+  font-family: "OpenSans";
 }
