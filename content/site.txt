@@ -1,1 +1,53 @@
-Title: Site Title
+Title: Kirby Starter
+
+----
+
+Meta-description: 
+
+----
+
+Meta-title-separator: 
+
+----
+
+Meta-website-owner: person
+
+----
+
+Meta-org-name: 
+
+----
+
+Meta-org-logo: 
+
+----
+
+Meta-person: - user://qIhoHfiy
+
+----
+
+Og-site-name: 
+
+----
+
+Og-image: 
+
+----
+
+Robots-index: 
+
+----
+
+Robots-follow: 
+
+----
+
+Robots-archive: 
+
+----
+
+Robots-imageindex: 
+
+----
+
+Robots-snippet: 

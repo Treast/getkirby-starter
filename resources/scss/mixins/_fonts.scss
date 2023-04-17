@@ -1,0 +1,18 @@
+// @include fonts($fontTitle, 'BrownPro-Bold', 700);
+@mixin fonts($name, $file, $fontWeight) {
+  @font-face {
+    font-family: $name;
+    src: url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.eot");
+    src: url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.eot?#iefix")
+        format("embedded-opentype"),
+      url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.woff2")
+        format("woff2"),
+      url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.woff")
+        format("woff"),
+      url("#{$fontPath}/#{to-lower-case(#{$name})}/#{$file}.ttf")
+        format("truetype");
+    font-weight: $fontWeight;
+    font-style: normal;
+    font-display: swap;
+  }
+}

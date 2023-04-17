@@ -1,0 +1,5 @@
+type: pages
+template: project
+info: "{{ page.date.toDate('d/m/Y') }}"
+image:
+  cover: true

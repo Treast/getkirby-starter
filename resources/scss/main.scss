@@ -1,4 +1,13 @@
+@import "./variables";
+@import "./layouts/reset";
+
+@import "./mixins/responsive";
+@import "./mixins/fonts";
+
+@import "./layouts/grid";
+
+@import "./components/navigation";
+
 html,
 body {
-  background-color: #f00;
 }

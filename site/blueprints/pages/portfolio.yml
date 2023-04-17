@@ -1,0 +1,18 @@
+title: Portfolio
+
+columns:
+  - width: 2/3
+    label: Projets
+    sections:
+      content:
+        extends: sections/projects
+        headline: Projets publiés
+        layout: cards
+        status: listed
+  - width: 1/3
+    label: Brouillon
+    sections:
+      drafts:
+        extends: sections/projects
+        headline: Brouillon
+        status: draft

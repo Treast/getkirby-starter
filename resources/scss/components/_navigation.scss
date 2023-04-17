@@ -1,0 +1,29 @@
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  nav {
+    align-items: center;
+
+    .logo {
+      grid-column: span 3;
+    }
+
+    ul.nav {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 20px;
+      grid-column: span 9;
+
+      li {
+        a {
+          text-transform: uppercase;
+        }
+
+        &.nav-item--active a {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

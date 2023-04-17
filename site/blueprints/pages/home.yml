@@ -1,9 +1,4 @@
-title: Default Page
-
-options:
-  changeTemplate:
-    - blog
-    - default
+title: Homepage
 
 tabs:
   content:
@@ -21,6 +16,14 @@ tabs:
       sidebar:
         width: 1/3
         sections:
+          logo:
+            headline: Logo
+            type: fields
+            fields:
+              logo:
+                type: files
+                max: 1
+
           pages:
             type: pages
             template: default

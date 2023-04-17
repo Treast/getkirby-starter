@@ -1,4 +1,176 @@
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  background-color: #f00;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.grid, .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 80px;
+  row-gap: 80px;
+}
+@media (max-width: 1023px) {
+  .grid, .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+:root {
+  --container-padding: 20px;
+  --container-width: calc(100% - var(--container-padding) * 2);
+}
+
+.container {
+  width: 100%;
+  padding-left: calc(50% - var(--container-width) / 2);
+  padding-right: calc(50% - var(--container-width) / 2);
+}
+
+@media only screen and (min-width: 1240px) {
+  :root {
+    --container-width: 1200px;
+  }
+}
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+header nav {
+  align-items: center;
+}
+header nav .logo {
+  grid-column: span 3;
+}
+header nav ul.nav {
+  display: flex;
+  justify-content: flex-end;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-column: span 9;
+}
+header nav ul.nav li a {
+  text-transform: uppercase;
+}
+header nav ul.nav li.nav-item--active a {
+  font-weight: 700;
 }

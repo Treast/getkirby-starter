@@ -1,0 +1,29 @@
+Caption: 
+
+----
+
+Alt: LogoIpsum
+
+----
+
+Photographer: 
+
+----
+
+License: 
+
+----
+
+Link: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: yPlPke0z9i4nzm7R
+
+----
+
+Template: logo

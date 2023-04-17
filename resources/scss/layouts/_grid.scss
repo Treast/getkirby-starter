@@ -1,0 +1,32 @@
+$grid-gap: 80px;
+$container-padding: 20px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: $grid-gap;
+  row-gap: $grid-gap;
+
+  @include max-desktop {
+    grid-template-columns: 1fr;
+  }
+}
+
+:root {
+  --container-padding: #{$container-padding};
+  --container-width: calc(100% - var(--container-padding) * 2);
+}
+
+.container {
+  @extend .grid;
+
+  width: 100%;
+  padding-left: calc(50% - var(--container-width) / 2);
+  padding-right: calc(50% - var(--container-width) / 2);
+}
+
+@media only screen and (min-width: (#{$wide-size + 2 * $container-padding })) {
+  :root {
+    --container-width: #{$wide-size};
+  }
+}

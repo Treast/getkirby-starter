@@ -1,7 +1,9 @@
-<h1>{{ $page->title() }}</h1>
+@snippet('header')
 
-@if (1 == 1)
-  <p>azeaz</p>
-@else
-  <p>aze</p>
-@endif
+<main class="container">
+  <h1>{{ $page->title() }}</h1>
+  {!! $page->text()->toBlocks() !!}
+</main>
+
+
+@snippet('footer')

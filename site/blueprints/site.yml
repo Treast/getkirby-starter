@@ -1,5 +1,8 @@
 title: Site
 
+options:
+  create: false
+
 tabs:
   content:
     icon: text
@@ -7,4 +10,7 @@ tabs:
     sections:
       pages:
         type: pages
+        image:
+          query: page.images.first ?? page.children.first.images.first
+          cover: true
   meta: tabs/meta/site

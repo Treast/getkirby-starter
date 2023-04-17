@@ -78,9 +78,7 @@ video {
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 footer,
@@ -121,56 +119,4 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
-}
-
-.grid, .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 80px;
-  row-gap: 80px;
-}
-@media (max-width: 1023px) {
-  .grid, .container {
-    grid-template-columns: 1fr;
-  }
-}
-
-:root {
-  --container-padding: 20px;
-  --container-width: calc(100% - var(--container-padding) * 2);
-}
-
-.container {
-  width: 100%;
-  padding-left: calc(50% - var(--container-width) / 2);
-  padding-right: calc(50% - var(--container-width) / 2);
-}
-
-@media only screen and (min-width: 1240px) {
-  :root {
-    --container-width: 1200px;
-  }
-}
-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-header nav {
-  align-items: center;
-}
-header nav .logo {
-  grid-column: span 3;
-}
-header nav ul.nav {
-  display: flex;
-  justify-content: flex-end;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  grid-column: span 9;
-}
-header nav ul.nav li a {
-  text-transform: uppercase;
-}
-header nav ul.nav li.nav-item--active a {
-  font-weight: 700;
 }
