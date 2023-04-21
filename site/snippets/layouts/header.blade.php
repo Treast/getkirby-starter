@@ -8,5 +8,5 @@
 
 <body>
   <header>
-    @snippet('navigation')
+    @snippet('layouts/navigation')
   </header>

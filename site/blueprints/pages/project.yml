@@ -20,6 +20,9 @@ columns:
       meta:
         type: fields
         fields:
+          cover:
+            type: files
+            max: 1
           author:
             type: users
             max: 1

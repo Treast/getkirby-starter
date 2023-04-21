@@ -8,7 +8,10 @@
 
 @import "./components/navigation";
 
+@import "./pages/home";
+
 @include fonts("OpenSans", "OpenSans", "OpenSans-Regular", 400);
+@include fonts("OpenSans", "OpenSans", "OpenSans-Bold", 700);
 
 html,
 body {

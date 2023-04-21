@@ -10,6 +10,11 @@ tabs:
     sections:
       pages:
         type: pages
+        templates:
+          - home
+          - portfolio
+          - default
+          - blog
         image:
           query: page.images.first ?? page.children.first.images.first
           cover: true

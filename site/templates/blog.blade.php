@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@snippet('layouts/header')
 
-<head>
-  @snippet('header')
-</head>
-
-<body>
+<main class="container">
   {!! $page->text()->toBlocks() !!}
-</body>
+</main>
 
-</html>
+
+@snippet('layouts/footer')
