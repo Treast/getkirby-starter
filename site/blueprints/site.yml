@@ -4,18 +4,6 @@ options:
   create: false
 
 tabs:
-  content:
-    icon: text
-    label: Content
-    sections:
-      pages:
-        type: pages
-        templates:
-          - home
-          - portfolio
-          - default
-          - blog
-        image:
-          query: page.images.first ?? page.children.first.images.first
-          cover: true
+  content: tabs/content
+  navigation: tabs/navigation
   meta: tabs/meta/site

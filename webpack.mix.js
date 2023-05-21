@@ -1,4 +1,5 @@
 const mix = require("laravel-mix");
+require("laravel-mix-workbox");
 
 mix
   .disableNotifications()
@@ -15,4 +16,7 @@ mix
       fonts: "assets/fonts",
       images: "assets/images",
     },
+  })
+  .generateSW({
+    sourcemap: false,
   });

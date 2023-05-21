@@ -25,7 +25,9 @@
     "php": ">=8.0.0 <8.3.0",
     "getkirby/cms": "^3.9",
     "leitsch/kirby-blade": "^2.3",
-    "fabianmichael/kirby-meta": "~0.4.0-beta"
+    "fabianmichael/kirby-meta": "~0.4.0-beta",
+    "treast/kirby-debugbar": "^1.3",
+    "belugadigital/kirby-navigation": "^3.0"
   },
   "config": {
     "allow-plugins": {

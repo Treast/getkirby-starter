@@ -2,6 +2,33 @@ Title: Kirby Starter
 
 ----
 
+Logo: - file://QXtT7aCc6iXNlawj
+
+----
+
+Primarymenu:
+
+- 
+  children: [ ]
+  id: home
+  text: Home
+  url: http://kirby.localhost
+  uuid: 657w6gmk12p
+- 
+  children: [ ]
+  id: blog
+  text: Blog
+  url: http://kirby.localhost/blog
+  uuid: k481swvxbb
+- 
+  children: [ ]
+  id: portfolio
+  text: Portfolio
+  url: http://kirby.localhost/portfolio
+  uuid: f8wqz9jmc6
+
+----
+
 Meta-description: 
 
 ----
@@ -22,7 +49,7 @@ Meta-org-logo:
 
 ----
 
-Meta-person: - user://qIhoHfiy
+Meta-person: - user://icLH8YPO
 
 ----
 
@@ -51,3 +78,26 @@ Robots-imageindex:
 ----
 
 Robots-snippet: 
+
+----
+
+Primary-menu:
+
+- 
+  children: [ ]
+  id: home
+  text: Home
+  url: http://kirby.localhost
+  uuid: g6epfctcxtr
+- 
+  children: [ ]
+  id: blog
+  text: Blog
+  url: http://kirby.localhost/blog
+  uuid: 0x8x1nsc5zud
+- 
+  children: [ ]
+  id: portfolio
+  text: Portfolio
+  url: http://kirby.localhost/portfolio
+  uuid: i9atfezf24e

@@ -1,6 +1,7 @@
 <?php
 
 define('KIRBY_HELPER_E', false);
+define('KIRBY_HELPER_DUMP', false);
 
 require 'kirby/bootstrap.php';
 

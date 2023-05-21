@@ -2,6 +2,9 @@
 
 return [
   'debug' => true,
+  'cache' => false, //require __DIR__ . '/cache.php',
+  'routes' => require __DIR__ . '/routes.php',
+  'pwa' => require __DIR__ . '/pwa.php',
   'blocks' => [
     'fieldsets' => [
       'text' => [
@@ -65,5 +68,10 @@ return [
         '1920w' => ['width' => 1920, 'format' => 'webp']
       ],
     ],
-  ]
+  ],
+  'fabianmichael' => [
+    'meta' => [
+      'sitemap' => false
+    ]
+  ],
 ];

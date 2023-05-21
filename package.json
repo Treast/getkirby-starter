@@ -19,6 +19,10 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.61.0",
     "sass-loader": "^12.1.0",
-    "webpack": "^5.78.0"
+    "webpack": "^5.78.0",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "laravel-mix-workbox": "^0.1.4"
   }
 }
