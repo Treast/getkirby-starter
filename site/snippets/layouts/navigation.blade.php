@@ -1,8 +1,8 @@
 <nav class="container grid">
   <div class="logo">
-    @if ($logo = $site->homePage()->logo()->toFile())
+    @if ($logo = $site->logo()->toFile())
       <a href="{{ $site->homePage()->url() }}">
-        <img src="{{ $logo->url() }}" alt="{{ $logo->alt() }}">
+        <img src="{{ $logo->resize(null, 40)->url() }}" alt="{{ $logo->alt() }}">
       </a>
     @endif
   </div>
