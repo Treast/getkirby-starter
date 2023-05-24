@@ -16,12 +16,31 @@ header {
       grid-column: span 9;
 
       li {
+        position: relative;
+        padding: 10px 5px;
+
         a {
           text-transform: uppercase;
         }
 
         &.nav-item--active a {
           font-weight: 700;
+        }
+
+        ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          border-radius: 4px;
+          border: 1px solid #e5e5e5;
+          width: 100%;
+        }
+
+        &:hover {
+          ul {
+            display: block;
+          }
         }
       }
     }

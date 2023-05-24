@@ -21,7 +21,21 @@ Primarymenu:
   url: http://kirby.localhost/blog
   uuid: k481swvxbb
 - 
-  children: [ ]
+  children:
+    - 
+      children: [ ]
+      id: portfolio/projet-1
+      text: Projet 1
+      url: >
+        http://kirby.localhost/portfolio/projet-1
+      uuid: yhd9f8m8xme
+    - 
+      children: [ ]
+      id: portfolio/projet-2
+      text: Projet 2
+      url: >
+        http://kirby.localhost/portfolio/projet-2
+      uuid: 5o6mh634gq7
   id: portfolio
   text: Portfolio
   url: http://kirby.localhost/portfolio

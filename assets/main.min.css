@@ -1,1 +1,219 @@
-*,:after,:before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;box-sizing:border-box}body,html{height:100%;margin:0;padding:0;width:100%}a{color:inherit;text-decoration:none}a,b,blockquote,body,canvas,caption,code,div,em,embed,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,label,li,main,nav,object,ol,p,pre,section,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,video{-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none;border:0;margin:0;padding:0;text-rendering:optimizeLegibility;vertical-align:baseline}footer,header,main,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}input{-webkit-appearance:none;border-radius:0}.grid{display:grid;gap:80px;grid-template-columns:repeat(12,1fr);row-gap:80px}@media (max-width:1023px){.grid{grid-template-columns:1fr}}:root{--container-padding:20px;--container-width:calc(100% - var(--container-padding)*2)}.container{padding-left:calc(50% - var(--container-width)/ 2);padding-right:calc(50% - var(--container-width)/ 2);width:100%}@media only screen and (min-width:1240px){:root{--container-width:1200px}}header{padding-bottom:30px;padding-top:30px}header nav{align-items:center}header nav .logo{grid-column:span 3}header nav ul.nav{-moz-column-gap:20px;column-gap:20px;display:flex;grid-column:span 9;justify-content:flex-end}header nav ul.nav li a{text-transform:uppercase}header nav ul.nav li.nav-item--active a{font-weight:700}.projects li{grid-column:span 3}.projects li img{height:auto;width:100%}@font-face{font-display:swap;font-family:OpenSans;font-style:"normal";font-weight:400;src:url(/assets/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46);src:url(/assets/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46?#iefix) format("embedded-opentype"),url(/assets/fonts/OpenSans-Regular.woff2?4361a1a4c7bcc152b0dd789c61b95958) format("woff2"),url(/assets/fonts/OpenSans-Regular.woff?b92cb4a9aaeffb93908d1f0311203114) format("woff"),url(/assets/fonts/OpenSans-Regular.ttf?193203d82e5dd325f0b83c583982d90b) format("truetype"),url(/assets/fonts/OpenSans-Regular.svg?b5ba3723d28577cffb754a051d0357d9) format("svg")}@font-face{font-display:swap;font-family:OpenSans;font-style:"normal";font-weight:700;src:url(/assets/fonts/OpenSans-Bold.eot?baaec7a009f9f87f5b8ff591f7a555de);src:url(/assets/fonts/OpenSans-Bold.eot?baaec7a009f9f87f5b8ff591f7a555de?#iefix) format("embedded-opentype"),url(/assets/fonts/OpenSans-Bold.woff2?53adcff143a448b00f77ef56911c0449) format("woff2"),url(/assets/fonts/OpenSans-Bold.woff?b37d1709d6c6974c1258c31ddc6db204) format("woff"),url(/assets/fonts/OpenSans-Bold.ttf?b31c7eafef9b5ad6324ea5e1ba2c71d6) format("truetype"),url(/assets/fonts/OpenSans-Bold.svg?847cec770eeac6bb9909e190dab8d7a0) format("svg")}body,html{font-family:OpenSans}
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 80px;
+  row-gap: 80px;
+}
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+:root {
+  --container-padding: 20px;
+  --container-width: calc(100% - var(--container-padding) * 2);
+}
+
+.container {
+  width: 100%;
+  padding-left: calc(50% - var(--container-width) / 2);
+  padding-right: calc(50% - var(--container-width) / 2);
+}
+
+@media only screen and (min-width: 1240px) {
+  :root {
+    --container-width: 1200px;
+  }
+}
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+header nav {
+  align-items: center;
+}
+header nav .logo {
+  grid-column: span 3;
+}
+header nav ul.nav {
+  display: flex;
+  justify-content: flex-end;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-column: span 9;
+}
+header nav ul.nav li {
+  position: relative;
+  padding: 10px 5px;
+}
+header nav ul.nav li a {
+  text-transform: uppercase;
+}
+header nav ul.nav li.nav-item--active a {
+  font-weight: 700;
+}
+header nav ul.nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+}
+header nav ul.nav li:hover ul {
+  display: block;
+}
+
+.projects li {
+  grid-column: 3 span;
+}
+.projects li img {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46);
+  src: url(/assets/fonts/OpenSans-Regular.eot?df03e9ce2ebcf8fc5ebdc954e8a72f46?#iefix) format("embedded-opentype"), url(/assets/fonts/OpenSans-Regular.woff2?4361a1a4c7bcc152b0dd789c61b95958) format("woff2"), url(/assets/fonts/OpenSans-Regular.woff?b92cb4a9aaeffb93908d1f0311203114) format("woff"), url(/assets/fonts/OpenSans-Regular.ttf?193203d82e5dd325f0b83c583982d90b) format("truetype"), url(/assets/fonts/OpenSans-Regular.svg?b5ba3723d28577cffb754a051d0357d9) format("svg");
+  font-weight: 400;
+  font-style: "normal";
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/fonts/OpenSans-Bold.eot?baaec7a009f9f87f5b8ff591f7a555de);
+  src: url(/assets/fonts/OpenSans-Bold.eot?baaec7a009f9f87f5b8ff591f7a555de?#iefix) format("embedded-opentype"), url(/assets/fonts/OpenSans-Bold.woff2?53adcff143a448b00f77ef56911c0449) format("woff2"), url(/assets/fonts/OpenSans-Bold.woff?b37d1709d6c6974c1258c31ddc6db204) format("woff"), url(/assets/fonts/OpenSans-Bold.ttf?b31c7eafef9b5ad6324ea5e1ba2c71d6) format("truetype"), url(/assets/fonts/OpenSans-Bold.svg?847cec770eeac6bb9909e190dab8d7a0) format("svg");
+  font-weight: 700;
+  font-style: "normal";
+  font-display: swap;
+}
+html,
+body {
+  font-family: "OpenSans";
+}
